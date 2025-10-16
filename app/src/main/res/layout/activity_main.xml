@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/Background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH0"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH1"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH2"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.216666666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH3"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.37333333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH4"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH5"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.686666666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH6"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="0.84333333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineH7"
+        style="@style/GuideLineHorizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineV1"
+        style="@style/GuideLineVertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineV2"
+        style="@style/GuideLineVertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineV3"
+        style="@style/GuideLineVertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineV4"
+        style="@style/GuideLineVertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineV5"
+        style="@style/GuideLineVertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt0"
+        style="@style/CalcButton"
+        android:text="@string/zero"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH6"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH7"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt1"
+        style="@style/CalcButton"
+        android:text="@string/one"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH5"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH6"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt2"
+        style="@style/CalcButton"
+        android:text="@string/two"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH5"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH6"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV2"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt3"
+        style="@style/CalcButton"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH6"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV4"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV3"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt4"
+        style="@style/CalcButton"
+        android:text="@string/four"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH4"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH5"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt5"
+        style="@style/CalcButton"
+        android:text="@string/five"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH4"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH5"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV2"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt6"
+        style="@style/CalcButton"
+        android:text="@string/six"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH4"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH5"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV3"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV4"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt7"
+        style="@style/CalcButton"
+        android:text="@string/seven"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH3"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH4"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt8"
+        style="@style/CalcButton"
+        android:text="@string/eight"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH3"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH4"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV2"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt9"
+        style="@style/CalcButton"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV4"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV3"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btPunto"
+        style="@style/CalcButton"
+        android:text="@string/punto"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH6"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH7"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV3"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV4"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btIgual"
+        style="@style/CalcButton"
+        android:text="@string/igual"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH6"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH7"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSuma"
+        style="@style/CalcButton"
+        android:text="@string/suma"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH5"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH6"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btResta"
+        style="@style/CalcButton"
+        android:text="@string/resta"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH4"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH5"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btMultiplicar"
+        style="@style/CalcButton"
+        android:text="@string/multiplicar"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH3"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH4"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDividir"
+        style="@style/CalcButton"
+        android:text="@string/dividir"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH2"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH3"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV4"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btC"
+        style="@style/CalcButton"
+        android:text="@string/c"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH2"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH3"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV3"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV4"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCe"
+        style="@style/CalcButton"
+        android:text="@string/ce"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH2"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH3"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV2"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btPercentage"
+        style="@style/CalcButton"
+        android:text="@string/percentage"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH2"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH3"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV2" />
+
+    <TextView
+        android:id="@+id/output"
+        style="@style/Output"
+        android:text="@string/zero"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH1"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH2"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5"/>
+
+    <TextView
+        android:id="@+id/operation"
+        style="@style/Operation"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineH0"
+        app:layout_constraintBottom_toTopOf="@id/GuideLineH1"
+        app:layout_constraintStart_toEndOf="@id/GuideLineV1"
+        app:layout_constraintEnd_toStartOf="@id/GuideLineV5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
